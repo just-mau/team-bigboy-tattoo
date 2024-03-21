@@ -56,3 +56,7 @@
 #team .card {
     max-width: 350px;
 }
+
+.mh-76 {
+    min-height: 76vh;
+}
