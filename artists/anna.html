@@ -21,8 +21,22 @@
 </head>
 
 <body>
-<nav class="navbar navbar-light bg-dark text-white px-4">
-    <a class="navbar-brand text-white" href="#">Logo</a>
+<nav class="navbar position-sticky sticky-top navbar-light navbar-expand-lg bg-dark text-white px-4">
+
+    <a class="navbar-brand align-center text-white ms-auto me-auto" href="#"><img src="../assets/img/Logo.png" class="header-logo" width="320px"></a>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            let img = document.querySelector('.header-logo');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                img.style.width = "120px";
+            } else {
+                img.style.width = "320px";
+            }
+        }
+    </script>
 </nav>
 
 <section class="section py-5 bg-light text-black">
@@ -42,11 +56,6 @@
                         <div class="row">
                             <div class="col-12">
                                 <h3>Anna</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                Hi ich bin BigBoy-Girl Anna!
                             </div>
                         </div>
                         <div class="row">
@@ -77,7 +86,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -93,7 +102,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -109,7 +118,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -125,7 +134,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -141,7 +150,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -157,7 +166,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="../assets/img/artists/anna.jpg">
+                                    <img src="../portfolio/anna/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -171,12 +180,12 @@
     </div>
 </section>
 
-<footer class="bg-white text-dark">
+<footer class="bg-black text-white-50">
     <div class="d-flex justify-content-between">
         <div>
-            <a class="link text-dark mx-2" href="impressum.html">Impressum</a>
+            <a class="link text-white-50 mx-2" href="impressum.html">Impressum</a>
         </div>
-        <span class="text-dark mx-2">&#169; Team BigBoy Tattoo</span>
+        <span class="text-white-50 mx-2">&#169; Team BigBoy Tattoo</span>
     </div>
 
     </div>

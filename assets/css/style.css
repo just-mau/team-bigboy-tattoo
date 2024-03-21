@@ -23,10 +23,6 @@
     -o-transition     : all 2s linear;
 }
 
-.team-image-container img {
-    filter: none !important
-}
-
 .circle-container {
     border-radius: 25%;
 }
@@ -46,5 +42,17 @@
 }
 
 .artist-image-container img {
+    min-height: 320px;
+}
+
+.artist-image-container img {
     width: 320px;
+}
+
+.header-logo {
+    transition: 0.3s;
+}
+
+#team .card {
+    max-width: 350px;
 }

@@ -21,8 +21,36 @@
 </head>
 
 <body>
-<nav class="navbar navbar-light bg-dark text-white px-4">
-    <a class="navbar-brand text-white" href="#">Logo</a>
+<nav class="navbar position-sticky sticky-top navbar-light navbar-expand-lg bg-dark text-white px-4">
+
+    <a class="navbar-brand align-center text-white ms-auto me-auto" href="#"><img src="assets/img/Logo.png" class="header-logo" width="320px"></a>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            let img = document.querySelector('.header-logo');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                img.style.width = "120px";
+            } else {
+                img.style.width = "320px";
+            }
+        }
+    </script>
+    <!-- <button class="navbar-toggler text-white" type="button"
+            data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active text-white" href="#">Team BigBoy Tattoo</a>
+            <a class="nav-item nav-link text-white" href="#about-us">Über Uns</a>
+            <a class="nav-item nav-link text-white" href="#opening-times">Öffnungszeiten</a>
+            <a class="nav-item nav-link text-white" href="#team">Das Team</a>
+        </div>
+    </div>-->
 </nav>
 
     <div class="alert alert-danger">Diese Seite befindet sich aktuell unter Bearbeitung.</div>
@@ -37,13 +65,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-12">
-                <h2 class="align-center">Über uns</h2>
+                <h2 class="align-center" id="about-us">Über uns</h2>
                 <p>
-                    Wir sind Team BigBoy Tattoo aus Bremen. Hier steht jetzt ein kurzer Vorstellungs-Text zu uns.
-                    Des weiteren sind hier ein paar nützliche Informationen
+                    Herzlich Willkommen bei Team Big Boy! <br/><br/>
+                    Seit fünf Jahren erfüllen wir in Bremen Tattoowünsche jeglicher Art. Mit zahlreichen Tätowierer/Innen können wir ein umfangreiches Repertoire in allen Stilrichtungen abdecken und täglichen Walk-In für kleinere Tätowierungen anbieten.<br/>
+                    Auch für Piercings heißt es einfach vorbeikommen!<br/><br/>
+                    Auf unserer Website findest du einen kleinen Überblick über unsere erfahrenen Künstler/Innen. Sollten wir Dein Interesse geweckt haben besuche uns gerne auf Instagram, dort verzeichnen wir einen großen Einblick in unsere täglichen Arbeiten und halten Dich über Aktionen und Angebote auf dem Laufenden!<br/><br/>
+                    Für eine kostenlose Beratung stehen wir Dir gerne jederzeit vor Ort zur Verfügung.
                 </p>
             </div>
-            <div class="col-md-6 col-12">
+            <div class="col-md-6 col-12" id="opening-times">
                 <h3>Öffnungszeiten</h3>
                 <ul class="no-bullets">
                     <li>
@@ -81,7 +112,7 @@
 </section>
 
 <section class="section py-4 bg-dark text-white">
-    <div class="container">
+    <div class="container" id="team">
         <h2 class="align-center">Das Team</h2>
         <div class="d-flex flex-wrap justify-content-center">
             <!-- Amo -->
@@ -102,14 +133,17 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                Abstract, <b>Realistic</b>, Fineline
+                                Fineline, Maori, <b>Realistic</b>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <a target="_blank" href="https://www.instagram.com/amore.tattoo7/">
                                     <span class="insta-logo"></span>
-                                    Instagram
+                                    Instagram</a>&nbsp;
+                                <a target="_blank" href="artists/amo.html">
+                                    <span class="insta-logo"></span>
+                                    Portfolio
                                 </a>
                             </div>
                         </div>
@@ -135,14 +169,16 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <b>Abstract</b>, Color, Fineline
+                                <b>Abstract</b>, Color, Cover-Up, Fineline, Realistic
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12">
                                 <a target="_blank" href="https://www.instagram.com/f.anna.ink/">
                                     <span class="insta-logo"></span>
-                                    Instagram
+                                    Instagram</a>&nbsp;
+                                <a target="_blank" href="artists/anna.html">
+                                    Portfolio
                                 </a>
                             </div>
                         </div>
@@ -201,7 +237,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <b>Abstract</b>, Color, Fineline
+                                Abstract, Lettering, <b>Fineline</b>
                             </div>
                         </div>
                         <div class="row">
@@ -209,7 +245,8 @@
                                 <a target="_blank" href="https://www.instagram.com/ata.tattoo666/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/ata.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -234,7 +271,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <b>Abstract</b>, Color, Fineline
+                                <b>Abstract</b>, Cover-Up, Geometric, Realistic, Trash-Polka
                             </div>
                         </div>
                         <div class="row">
@@ -242,7 +279,8 @@
                                 <a target="_blank" href="https://www.instagram.com/f.anna.ink/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/daddo.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +294,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="artist-image-container">
-                                    <img src="assets/img/artists/daniel.JPEG">
+                                    <img src="assets/img/artists/daniel.JPG">
                                 </div>
                             </div>
                         </div>
@@ -275,7 +313,8 @@
                                 <a target="_blank" href="https://www.instagram.com/daniel_mordor.ink/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/daniel.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -315,7 +354,8 @@
                                 <a target="_blank" href="https://www.instagram.com//">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/jony.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -348,7 +388,8 @@
                                 <a target="_blank" href="https://www.instagram.com/jura_tattoo_ink/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/jura.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -381,7 +422,8 @@
                                 <a target="_blank" href="https://www.instagram.com/niklas_ink.bremen/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/niklas.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
@@ -414,25 +456,48 @@
                                 <a target="_blank" href="https://www.instagram.com/salman.tattoo/">
                                     <span class="insta-logo"></span>
                                     Instagram
-                                </a>
+                                </a>&nbsp;
+                                <a href="artists/salman.html">Portfolio</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- /Jura -->
-        </div>
-    </div>
-</section>
-
-<section class="section py-4 bg-white text-black">
-    <div class="container">
-        <h3>Platz für weiteren Abschnitt</h3>
-        <div class="row">
-            <div class="col-12">
-                Hier haben wir Platz, um einen weiteren Abschnitt zu hinterlegen. Evtl bietet sich hier noch mal eine
-                große Anzeige für Instagram an.
+            <!-- /Salman -->
+            <!-- Uly -->
+            <div class="p-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="artist-image-container">
+                                    <img src="assets/img/artists/uly.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <h4 class="text-dark">Uly</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                Color, Cover-up, <b>Realistic</b>, Neo-Traditional
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <a target="_blank" href="https://www.instagram.com/salman.tattoo/">
+                                    <span class="insta-logo"></span>
+                                    Instagram
+                                </a>&nbsp;
+                                <a href="artists/uly.html">Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- /Salman -->
         </div>
     </div>
 </section>
